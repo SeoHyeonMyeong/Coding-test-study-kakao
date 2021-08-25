@@ -1,6 +1,5 @@
 import numpy as np
 n = 8
-max_queen = 4
 
 arr = np.zeros((n,n))
 global ans
@@ -58,7 +57,7 @@ def drop_queen(arr, index, count):
     y = index[1]
     arr[x,y] = 2
     count = count + 1
-    if count == max_queen:
+    if count == n:
         print(arr)
         ans = ans + 1
         return
