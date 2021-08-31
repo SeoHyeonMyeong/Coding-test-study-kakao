@@ -1,5 +1,11 @@
 def solution(n):
-    a = str(n).split()
-    print(a)
+    arr = []
+    ans = ""
+    for i in str(n):
+        arr.append(i)
+    arr.sort(reverse=True)
+    for i in arr:
+        ans += i
+    return int(ans)
 
-solution(100032)
+print(solution(100032))
