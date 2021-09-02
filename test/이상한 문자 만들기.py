@@ -11,7 +11,6 @@ def solution(s):
                 ans += char.upper()
             switch = not switch
         ans += ' '
-    print(ans)
-    return ans
+    return ans[:-1]
 
 solution("hello world its me")

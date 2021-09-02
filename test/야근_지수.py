@@ -8,9 +8,10 @@ def max(arr):
 def solution(n, works):
     ans = 0
     for i in range(n):
+        if max(works) == 0:
+            break
         works[works.index(max(works))] -= 1
-    for num in works:
-        ans += num ** 2
+    ans = sum([i**2 for i in works])
     return ans
 
-print(solution(4, [4,3,3]))
+print(solution(3, [1,1]))

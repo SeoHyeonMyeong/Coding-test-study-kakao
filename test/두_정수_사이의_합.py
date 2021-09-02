@@ -1,6 +1,10 @@
 def solution(a, b):
     sum = 0
-    for i in range(a,b+1):
-        sum += i
+    if a>b:
+        tmp = a
+        a = b
+        b = tmp
+    n = b - a + 1
+    sum = n * (a + b) / 2
     return sum
 print(solution(3,5))
