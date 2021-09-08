@@ -37,4 +37,4 @@ def rotate(table,coord):
             x_dir,y_dir = -1,0
     return table,min
 
-print(solution(6,6,[[2,2,5,4],[3,3,6,6],[5,1,6,3]]))
+# print(solution(6,6,[[2,2,5,4],[3,3,6,6],[5,1,6,3]]))
