@@ -5,7 +5,6 @@ def solution(skill, skill_trees):
         for item in skill_tree:
             if item in skill:
                 now = skill.index(item)
-                print(skill[now])
                 if now - current == 1:
                     current = now
                 else:
