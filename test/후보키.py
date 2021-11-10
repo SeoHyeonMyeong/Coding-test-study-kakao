@@ -32,9 +32,11 @@ def solution(relation):
                     lst = relation[j].copy()
                 else:
                     lst = [x+" "+y for x,y in zip(lst,relation[j])]
-            print(lst)
+            # lst가 비어있다면
+            if len(lst) == 0:
+                ans.append(tmp)
             # lst가 유일성을 만족하고 타겟에 없다면 타겟에 추가
-            if (is_candidate(lst)) and (a not in targets):
+            elif (is_candidate(lst)) and (a not in targets):
                 targets.append(a)
             # lst가 유일성을 만족하지 않을경우 check ++
             elif not is_candidate(lst):
@@ -49,11 +51,6 @@ def is_candidate(arr):
         return True
     return False
 
+# data = [["aa","bb"],["cc","dd"]]
 # data = [["a","1","aaa","c","ng"],["a","1","bbb","e","g"], ["c","1","aaa","d","ng"], ["d","2","bbb","d","ng"]]
 # print(solution(data))
-# a = ["ab","bb"]
-# b = ["cd","bb"]
-# print([x+y for x,y in zip(a,b)])
-
-# cols = [[i for i in range(len(data[0]))]]
-# print(cols)
