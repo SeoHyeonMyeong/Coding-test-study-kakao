@@ -15,7 +15,7 @@ def solution(s):
                 count_zero += 1
         s = len_to_binary(len(s))
         s = deque(s)
-    return count_zero
+    return [iteration, count_zero]
 
 
 def len_to_binary(n):

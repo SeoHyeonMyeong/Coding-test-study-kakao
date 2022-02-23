@@ -24,8 +24,8 @@ def solution(n):
     return sum(ans,[])
 
 
-n = 4
-print(solution(n))
+# n = 4
+# print(solution(n))
 
 
 '''
